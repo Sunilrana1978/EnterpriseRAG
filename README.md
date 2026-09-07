@@ -17,19 +17,27 @@ This repository currently contains design documentation only (Phase 0 — POC no
 
 ![High-level architecture](architecture-diagram-hl.svg)
 
+*[Open interactive version →](architecture-diagram-hl.html)* (pan/zoom, light/dark, PNG/SVG export)
+
 Four zones: **Sources** feed the **Ingestion Pipeline**, which writes chunks, metadata, and staged entity relations into **Storage & Indexing**; the **Query & Generation** layer retrieves from there (vector + graph) and returns cited answers to the user. Each zone is broken out in detail below.
 
 ### ① Ingestion Pipeline — Low Level
 
 ![Ingestion pipeline detail](architecture-diagram-ll-ingestion.svg)
 
+*[Open interactive version →](architecture-diagram-ll-ingestion.html)*
+
 ### ② Storage & Indexing — Low Level
 
 ![Storage and indexing detail](architecture-diagram-ll-storage.svg)
 
+*[Open interactive version →](architecture-diagram-ll-storage.html)*
+
 ### ③ Query & Generation — Low Level
 
 ![Query and generation detail](architecture-diagram-ll-query.svg)
+
+*[Open interactive version →](architecture-diagram-ll-query.html)*
 
 See `rag-engine-tdd.md` §1 for the full text flow and component-by-component design.
 
